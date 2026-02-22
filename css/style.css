@@ -233,7 +233,7 @@ footer {
   font-size: 12px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--basalt);
+  color: var(--limestone);
   transition: color 0.15s;
 }
 
@@ -241,7 +241,7 @@ footer {
 
 .footer-copy {
   font-size: 12px;
-  color: var(--basalt);
+  color: var(--limestone);
   white-space: nowrap;
 }
 
@@ -378,7 +378,7 @@ footer {
   font-weight: 300;
   font-size: 14px;
   line-height: 1.7;
-  color: var(--basalt);
+  color: var(--limestone);
 }
 
 /* ── Thesis (home snippet) ──────────────────────────────── */
@@ -510,7 +510,7 @@ footer {
   font-weight: 400;
   font-size: 15px;
   line-height: 1.65;
-  color: var(--basalt);
+  color: var(--limestone);
   max-width: 560px;
 }
 
