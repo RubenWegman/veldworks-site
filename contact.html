@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact VeldWorks — for organisations ready to examine their own premise.">
+  <title>Contact — VeldWorks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Contact page specifics */
+    .contact-not-ready {
+      margin-top: 40px;
+      padding-top: 40px;
+      border-top: 1px solid var(--limestone);
+    }
+
+    .contact-not-ready h2 {
+      font-weight: 600;
+      font-size: 15px;
+      letter-spacing: -0.01em;
+      color: var(--carbon);
+      margin-bottom: 16px;
+    }
+
+    .not-ready-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .not-ready-item {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      font-size: 14px;
+      line-height: 1.5;
+      color: var(--limestone);
+    }
+
+    .not-ready-item::before {
+      content: '—';
+      color: var(--limestone);
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="index.html" class="nav-logo">VeldWorks</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="thesis.html">Thesis</a></li>
+      <li><a href="approach.html">Approach</a></li>
+      <li><a href="work.html">Work</a></li>
+      <div class="nav-sep"></div>
+      <li><a href="testimonials.html">References</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <p class="page-header-label">Contact</p>
+    <h1>Work is selective.<br>Inquiry is&nbsp;open.</h1>
+    <p class="sub">VeldWorks works with a small number of organisations at any given time. Before reaching out, the questions below are worth sitting with.</p>
+  </header>
+
+  <!-- CONTACT BODY -->
+  <div class="contact-body">
+
+    <!-- Left: Qualification -->
+    <div class="contact-qualification">
+      <h2>Are you ready?</h2>
+      <p>Not a checklist in the conventional sense. These are the signals that indicate an organisation is positioned for genuine engagement — not reassurance, not a framework, not an AI strategy deck.</p>
+
+      <div class="signal-list">
+        <div class="signal">
+          <div class="signal-dot"></div>
+          <span>Leadership is asking structural questions, not performance questions</span>
+        </div>
+        <div class="signal">
+          <div class="signal-dot"></div>
+          <span>Decision cycles feel like a liability rather than a safeguard</span>
+        </div>
+        <div class="signal">
+          <div class="signal-dot"></div>
+          <span>The organisation suspects its scale is producing drag more than advantage</span>
+        </div>
+        <div class="signal">
+          <div class="signal-dot"></div>
+          <span>There is willingness to stop doing work that only exists to coordinate other work</span>
+        </div>
+        <div class="signal">
+          <div class="signal-dot"></div>
+          <span>A small, decisive engagement is acceptable — broad participation is not required</span>
+        </div>
+      </div>
+
+      <div class="contact-not-ready">
+        <h2>Not the right fit if:</h2>
+        <div class="not-ready-list">
+          <div class="not-ready-item">You need an AI strategy deck before naming a business constraint</div>
+          <div class="not-ready-item">Consensus and alignment are the required outputs</div>
+          <div class="not-ready-item">The work needs to be politically safe inside the institution</div>
+          <div class="not-ready-item">Governance is treated as proof of seriousness</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Reach -->
+    <div class="contact-reach">
+      <p class="contact-reach-label">Get in touch</p>
+      <a href="mailto:reinout@veldworks.nl?subject=Inquiry%20—%20VeldWorks" class="contact-email">
+        reinout@veldworks.nl
+      </a>
+      <a href="mailto:reinout@veldworks.nl?subject=Inquiry%20—%20VeldWorks" class="cta-link">
+        Send a message
+      </a>
+
+      <div class="contact-note">
+        <p>There is no form and no intake call to schedule. Send a message describing the constraint — not the solution you have in mind. The clearer the constraint, the faster the response.</p>
+        <p>VeldWorks works with organisations across Know, Guide, and Build. If you are unsure which mode is relevant, that is a reasonable place to start the conversation.</p>
+        <p style="margin-top: 24px; font-size: 13px; color: var(--limestone);">Response time: typically within two working days.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <span class="footer-logo">VeldWorks</span>
+    <ul class="footer-links">
+      <li><a href="thesis.html">Thesis</a></li>
+      <li><a href="approach.html">Approach</a></li>
+      <li><a href="work.html">Work</a></li>
+      <li><a href="testimonials.html">References</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <span class="footer-copy">&copy; 2025 VeldWorks</span>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
