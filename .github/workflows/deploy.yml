@@ -20,4 +20,6 @@ on:
                                                                                         script: |
                                                                                                     cd /var/www/veldworks
                                                                                                                 git pull origin master
-                                                                                                                            echo "Deploy klaar: $(date)"
+                                                                                                                            cp -r /var/www/veldworks/. /opt/webserver/html/
+                                                                                                                                        docker exec webserver-nginx nginx -s reload
+                                                                                                                                                    echo "Deploy klaar: $(date)"
