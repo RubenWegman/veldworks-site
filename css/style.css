@@ -12,7 +12,7 @@
   --basalt:    #595755;
   --limestone: #D1CFCD;
   --chalk:     #F5F4F2;
-  --oxide:     #8A3E2F;
+  --oxide:     #C4573C;
   --white:     #FFFFFF;
 
   --f: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -20,7 +20,7 @@
   --nav-h: 64px;
 }
 
-html { font-size: 16px; scroll-behavior: smooth; }
+html { font-size: 17px; scroll-behavior: smooth; }
 
 body {
   background-color: var(--chalk);
@@ -28,6 +28,7 @@ body {
   font-family: var(--f);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  line-height: 1.75;
 }
 
 a { text-decoration: none; color: inherit; }
@@ -109,6 +110,42 @@ nav {
   border-bottom: 1px solid var(--limestone);
 }
 
+/* Founder page header with portrait */
+.founder-page-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 48px;
+}
+
+.founder-page-header-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.founder-page-photo-wrap {
+  flex-shrink: 0;
+}
+
+.founder-page-photo {
+  width: 220px;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+  filter: grayscale(15%);
+}
+
+@media (max-width: 768px) {
+  .founder-page-header {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  .founder-page-photo {
+    width: 160px;
+  }
+}
+
 .page-header-label {
   font-weight: 500;
   font-size: 11px;
@@ -141,10 +178,10 @@ nav {
 .page-header .sub {
   margin-top: 28px;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.65;
+  font-size: 17px;
+  line-height: 1.75;
   color: var(--basalt);
-  max-width: 540px;
+  max-width: 580px;
 }
 
 /* ── Section label ──────────────────────────────────────── */
@@ -318,15 +355,15 @@ footer {
 
 .hero-statement {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.65;
+  font-size: 17px;
+  line-height: 1.75;
   color: var(--basalt);
 }
 
 .hero-question {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.65;
+  font-size: 17px;
+  line-height: 1.75;
   color: var(--flint);
   padding-left: 20px;
   border-left: 2px solid var(--oxide);
@@ -427,8 +464,8 @@ footer {
 
 .thesis-block p {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.65;
+  font-size: 16.5px;
+  line-height: 1.8;
   color: var(--basalt);
 }
 
@@ -494,7 +531,7 @@ footer {
   font-size: 12px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--basalt);
+  color: var(--limestone);
 }
 
 .founder-statement {
@@ -508,13 +545,24 @@ footer {
 
 .founder-bio {
   font-weight: 400;
-  font-size: 15px;
-  line-height: 1.65;
+  font-size: 16px;
+  line-height: 1.8;
   color: var(--limestone);
-  max-width: 560px;
+  max-width: 580px;
 }
 
-.founder-bio p + p { margin-top: 16px; }
+.founder-bio p + p { margin-top: 20px; }
+
+.founder-photo {
+  width: 100%;
+  max-width: 260px;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: top center;
+  margin-top: 28px;
+  display: block;
+  filter: grayscale(20%);
+}
 
 /* ── Home contact strip ──────────────────────────────────── */
 .contact-strip {
@@ -578,12 +626,12 @@ footer {
 
 .thesis-section-content p {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.7;
+  font-size: 16.5px;
+  line-height: 1.8;
   color: var(--basalt);
 }
 
-.thesis-section-content p + p { margin-top: 20px; }
+.thesis-section-content p + p { margin-top: 24px; }
 
 .thesis-closing {
   padding: 80px 0 0;
