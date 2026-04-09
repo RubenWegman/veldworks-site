@@ -292,7 +292,7 @@ footer {
   padding: calc(var(--nav-h) + 72px) var(--pad) 80px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   position: relative;
   overflow: hidden;
 }
@@ -506,8 +506,26 @@ footer {
 }
 
 .field-notes-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 48px;
 }
+
+.field-notes-all-link {
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--basalt);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.15s, gap 0.15s;
+}
+
+.field-notes-all-link:hover { color: var(--carbon); gap: 14px; }
+.field-notes-all-link::after { content: '\2192'; }
 
 .field-notes-grid {
   display: grid;
@@ -521,6 +539,8 @@ footer {
   padding: 0 40px;
   border-left: 1px solid var(--limestone);
   transition: border-color 0.2s;
+  text-decoration: none;
+  color: inherit;
 }
 
 .field-note:first-child {
@@ -540,13 +560,46 @@ footer {
   border-left: none;
 }
 
+/* ── Field note meta row (date + tag + badge) ── */
+.field-note-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
 .field-note-date {
   font-weight: 400;
   font-size: 12px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--basalt);
-  margin-bottom: 16px;
+}
+
+.field-note-tag {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--basalt);
+  border: 1px solid var(--limestone);
+  border-radius: 2px;
+  padding: 1px 7px;
+  transition: border-color 0.15s;
+}
+
+.field-note:hover .field-note-tag { border-color: var(--basalt); }
+
+.field-note-badge {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--white);
+  background: var(--oxide);
+  border-radius: 2px;
+  padding: 1px 7px;
 }
 
 .field-note-title {
@@ -1096,6 +1149,7 @@ footer {
   .pillar:last-child { border-bottom: none; }
   .pillar-rule { left: 0; right: 0; }
   .elements-grid { grid-template-columns: 1fr; }
+  .field-notes-header { flex-wrap: wrap; gap: 16px; }
   .field-notes-grid { grid-template-columns: 1fr; }
   .field-note { padding: 24px 0; border-left: none; border-top: 1px solid var(--limestone); }
   .field-note:first-child { border-top: none; padding-top: 0; }

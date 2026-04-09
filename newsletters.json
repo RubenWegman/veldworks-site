@@ -1,0 +1,42 @@
+[
+  {
+    "id": "005",
+    "date": "2026-04-09",
+    "title": "AI pakt het middenkader als eerste",
+    "excerpt": "De klap valt niet bij de magazijnmedewerkers of de ingenieurs, maar bij het middenkader: productmanagers, technisch programmamanagers, projectcoördinatoren.",
+    "url": "field-notes/005-ai-pakt-het-middenkader-als-eerste.html",
+    "category": "Know"
+  },
+  {
+    "id": "004",
+    "date": "2026-04-08",
+    "title": "74% zet AI-agents in. 21% weet wat ze doen.",
+    "excerpt": "Drie op de vier organisaties gaan het uitrollen, maar vier op de vijf hebben de governance nog niet op orde. Dat is geen implementatieprobleem. Dat is een organisatieontwerp-probleem.",
+    "url": "field-notes/004-74-procent-ai-agents.html",
+    "category": "Know"
+  },
+  {
+    "id": "003",
+    "date": "2026-04-01",
+    "title": "When coordination cost hits zero",
+    "excerpt": "What happens to the organisation when the original reason for having one disappears.",
+    "url": "field-notes/003-when-coordination-cost-hits-zero.html",
+    "category": "Know"
+  },
+  {
+    "id": "002",
+    "date": "2026-03-15",
+    "title": "VeldWorks at Nedap in Motion 2026",
+    "excerpt": "The themes and conversations that defined this year's edition.",
+    "url": "field-notes/002-nedap-in-motion-2026.html",
+    "category": "Build"
+  },
+  {
+    "id": "001",
+    "date": "2026-03-01",
+    "title": "The overhead nobody measures",
+    "excerpt": "Most organisations track cost per unit. Almost none track the cost of deciding to produce that unit.",
+    "url": "field-notes/001-the-overhead-nobody-measures.html",
+    "category": "Know"
+  }
+]

@@ -25,6 +25,7 @@
       <div class="nav-sep"></div>
       <li><a href="founder.html">Founder</a></li>
       <li><a href="testimonials.html">References</a></li>
+      <li><a href="field-notes.html">Field Notes</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
     <button class="nav-toggle" id="nav-toggle" aria-label="Open menu">
@@ -56,26 +57,10 @@
   <section class="field-notes">
     <div class="field-notes-header">
       <p class="accent-rule">From the field</p>
+      <a href="field-notes.html" class="field-notes-all-link">All field notes</a>
     </div>
-    <div class="field-notes-grid">
-      <a href="#" class="field-note">
-        <time class="field-note-date">April 2026</time>
-        <h3 class="field-note-title">When coordination cost hits zero</h3>
-        <p class="field-note-body">What happens to the organisation when the original reason for having one disappears.</p>
-        <span class="field-note-cta">Read</span>
-      </a>
-      <a href="#" class="field-note">
-        <time class="field-note-date">March 2026</time>
-        <h3 class="field-note-title">VeldWorks at Nedap in Motion 2026</h3>
-        <p class="field-note-body">The themes and conversations that defined this year's edition.</p>
-        <span class="field-note-cta">Read</span>
-      </a>
-      <a href="#" class="field-note">
-        <time class="field-note-date">March 2026</time>
-        <h3 class="field-note-title">The overhead nobody measures</h3>
-        <p class="field-note-body">Most organisations track cost per unit. Almost none track the cost of deciding to produce that unit.</p>
-        <span class="field-note-cta">Read</span>
-      </a>
+    <div class="field-notes-grid" id="homepage-field-notes">
+      <!-- Loaded dynamically from newsletters.json -->
     </div>
   </section>
 
@@ -177,11 +162,43 @@
       <li><a href="approach.html">Approach</a></li>
       <li><a href="work.html">Work</a></li>
       <li><a href="testimonials.html">References</a></li>
+      <li><a href="field-notes.html">Field Notes</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
     <span class="footer-copy">&copy; 2026 VeldWorks</span>
   </footer>
 
   <script src="js/main.js"></script>
+  <script>
+    // Load 3 most recent field notes onto homepage
+    (async () => {
+      const grid = document.getElementById('homepage-field-notes');
+      if (!grid) return;
+      try {
+        const res = await fetch('newsletters.json');
+        const newsletters = await res.json();
+        newsletters.sort((a, b) => new Date(b.date) - new Date(a.date));
+        const recent = newsletters.slice(0, 3);
+        grid.innerHTML = recent.map((n, i) => {
+          const d = new Date(n.date);
+          const monthYear = d.toLocaleDateString('en-GB', { month: 'long', year: 'numeric' });
+          const href = n.url || 'field-notes.html';
+          const tag  = n.category ? `<span class="field-note-tag">${n.category}</span>` : '';
+          const badge = i === 0 ? `<span class="field-note-badge">New</span>` : '';
+          return `<a href="${href}" class="field-note">
+            <div class="field-note-meta">
+              <time class="field-note-date">${monthYear}</time>
+              ${tag}${badge}
+            </div>
+            <h3 class="field-note-title">${n.title}</h3>
+            <p class="field-note-body">${n.excerpt || ''}</p>
+            <span class="field-note-cta">Read</span>
+          </a>`;
+        }).join('');
+      } catch(e) {
+        grid.innerHTML = '';
+      }
+    })();
+  </script>
 </body>
 </html>

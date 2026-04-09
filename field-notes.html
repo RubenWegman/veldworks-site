@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Field Notes — dispatches from VeldWorks on the changing premises of organisations.">
+  <title>Field Notes — VeldWorks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* ── Field Notes archive — page-specific styles ─── */
+
+    .fn-archive {
+      padding: 0 var(--pad) 96px;
+    }
+
+    /* Year group */
+    .fn-year-group {
+      border-top: 1px solid var(--limestone);
+    }
+
+    .fn-year-label {
+      font-weight: 500;
+      font-size: 11px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--basalt);
+      padding: 24px 0 0;
+    }
+
+    /* Individual row */
+    .fn-row {
+      display: grid;
+      grid-template-columns: 80px 1fr auto auto;
+      gap: 0 28px;
+      align-items: center;
+      padding: 22px 0;
+      border-bottom: 1px solid var(--limestone);
+      text-decoration: none;
+      color: inherit;
+      transition: background 0.15s;
+    }
+
+    .fn-row:hover {
+      background: transparent;
+    }
+
+    .fn-row:hover .fn-row-title {
+      color: var(--oxide);
+    }
+
+    .fn-row-date {
+      font-weight: 400;
+      font-size: 12px;
+      letter-spacing: 0.04em;
+      color: var(--basalt);
+      white-space: nowrap;
+      padding-top: 2px;
+    }
+
+    .fn-row-content {
+      min-width: 0;
+    }
+
+    .fn-row-title {
+      font-weight: 500;
+      font-size: 16px;
+      letter-spacing: -0.02em;
+      line-height: 1.35;
+      color: var(--carbon);
+      transition: color 0.15s;
+      margin-bottom: 4px;
+    }
+
+    .fn-row-excerpt {
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 1.55;
+      color: var(--basalt);
+    }
+
+    .fn-row-tag {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--basalt);
+      border: 1px solid var(--limestone);
+      border-radius: 2px;
+      padding: 2px 8px;
+      white-space: nowrap;
+      align-self: center;
+      transition: border-color 0.15s;
+    }
+
+    .fn-row:hover .fn-row-tag { border-color: var(--basalt); }
+
+    .fn-row-arrow {
+      font-size: 14px;
+      color: var(--limestone);
+      transition: color 0.15s, transform 0.15s;
+      align-self: center;
+      white-space: nowrap;
+    }
+
+    .fn-row:hover .fn-row-arrow {
+      color: var(--oxide);
+      transform: translateX(4px);
+    }
+
+    /* Empty state */
+    .fn-empty {
+      padding: 80px 0;
+      color: var(--basalt);
+      font-size: 15px;
+    }
+
+    /* Subscribe strip */
+    .fn-subscribe {
+      background: var(--carbon);
+      padding: 64px var(--pad);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .fn-subscribe-text h2 {
+      font-weight: 600;
+      font-size: clamp(22px, 3vw, 32px);
+      letter-spacing: -0.03em;
+      color: var(--white);
+      margin-bottom: 12px;
+      line-height: 1.2;
+    }
+
+    .fn-subscribe-text p {
+      font-size: 15px;
+      color: var(--limestone);
+      line-height: 1.65;
+    }
+
+    .fn-subscribe-form {
+      display: flex;
+      gap: 12px;
+    }
+
+    .fn-subscribe-form input[type="email"] {
+      flex: 1;
+      padding: 12px 16px;
+      background: var(--flint);
+      border: 1px solid var(--basalt);
+      color: var(--white);
+      font-family: var(--f);
+      font-size: 14px;
+      outline: none;
+      transition: border-color 0.15s;
+    }
+
+    .fn-subscribe-form input[type="email"]::placeholder {
+      color: var(--basalt);
+    }
+
+    .fn-subscribe-form input[type="email"]:focus {
+      border-color: var(--oxide);
+    }
+
+    .fn-subscribe-form button {
+      padding: 12px 24px;
+      background: var(--oxide);
+      border: none;
+      color: var(--white);
+      font-family: var(--f);
+      font-weight: 500;
+      font-size: 12px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: opacity 0.15s;
+    }
+
+    .fn-subscribe-form button:hover {
+      opacity: 0.85;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .fn-row {
+        grid-template-columns: 1fr auto;
+        gap: 8px 16px;
+        padding: 18px 0;
+      }
+
+      .fn-row-date { grid-column: 1; grid-row: 1; }
+      .fn-row-content { grid-column: 1 / -1; grid-row: 2; }
+      .fn-row-tag { grid-column: 2; grid-row: 1; }
+
+      .fn-row-arrow {
+        display: none;
+      }
+
+      .fn-subscribe {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+
+      .fn-subscribe-form {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="index.html" class="nav-logo">VeldWorks</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="thesis.html">Thesis</a></li>
+      <li><a href="approach.html">Approach</a></li>
+      <li><a href="work.html">Work</a></li>
+      <div class="nav-sep"></div>
+      <li><a href="founder.html">Founder</a></li>
+      <li><a href="testimonials.html">References</a></li>
+      <li><a href="field-notes.html" class="active">Field Notes</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <p class="page-header-label">Dispatch</p>
+    <h1>Field Notes</h1>
+    <p class="sub">
+      Observations from where things are actually changing. Short, direct, and grounded in what we encounter in practice. Published whenever something is worth saying.
+    </p>
+  </div>
+
+  <!-- ARCHIVE LIST -->
+  <section class="fn-archive" id="archive">
+    <!-- Populated by JavaScript from newsletters.json -->
+  </section>
+
+  <!-- SUBSCRIBE STRIP -->
+  <section class="fn-subscribe">
+    <div class="fn-subscribe-text">
+      <h2>Receive Field Notes by email.</h2>
+      <p>No cadence. No filler. Published when there is something worth saying — delivered to your inbox.</p>
+    </div>
+    <form class="fn-subscribe-form" onsubmit="handleSubscribe(event)">
+      <input type="email" placeholder="your@email.com" required autocomplete="email">
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- CONTACT STRIP -->
+  <div class="contact-strip">
+    <p>For organisations ready to examine their own premise.</p>
+    <a href="contact.html" class="cta-link">Get in touch</a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <span class="footer-logo">VeldWorks</span>
+    <ul class="footer-links">
+      <li><a href="thesis.html">Thesis</a></li>
+      <li><a href="approach.html">Approach</a></li>
+      <li><a href="work.html">Work</a></li>
+      <li><a href="field-notes.html">Field Notes</a></li>
+      <li><a href="testimonials.html">References</a></li>
+    </ul>
+    <span class="footer-copy">&copy; 2026 VeldWorks</span>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // ── Load and render newsletter archive ───────────────────
+
+    async function loadArchive() {
+      const section = document.getElementById('archive');
+
+      let newsletters;
+      try {
+        const res = await fetch('newsletters.json');
+        newsletters = await res.json();
+      } catch (e) {
+        section.innerHTML = '<p class="fn-empty">No field notes published yet.</p>';
+        return;
+      }
+
+      if (!newsletters || newsletters.length === 0) {
+        section.innerHTML = '<p class="fn-empty">No field notes published yet.</p>';
+        return;
+      }
+
+      // Sort: newest first
+      newsletters.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+      // Group by year
+      const byYear = {};
+      newsletters.forEach(n => {
+        const year = new Date(n.date).getFullYear();
+        if (!byYear[year]) byYear[year] = [];
+        byYear[year].push(n);
+      });
+
+      const years = Object.keys(byYear).sort((a, b) => b - a);
+
+      let html = '';
+      years.forEach(year => {
+        html += `<div class="fn-year-group">
+          <p class="fn-year-label">${year}</p>`;
+
+        byYear[year].forEach(n => {
+          const d = new Date(n.date);
+          const dateStr = d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
+          const href = n.url || '#';
+          const tag = href !== '#' ? 'a' : 'div';
+          const hrefAttr = href !== '#' ? `href="${href}"` : '';
+
+          const tagHtml = n.category ? `<span class="fn-row-tag">${escHtml(n.category)}</span>` : '<span></span>';
+          html += `<${tag} class="fn-row" ${hrefAttr}>
+            <span class="fn-row-date">${dateStr}</span>
+            <div class="fn-row-content">
+              <p class="fn-row-title">${escHtml(n.title)}</p>
+              ${n.excerpt ? `<p class="fn-row-excerpt">${escHtml(n.excerpt)}</p>` : ''}
+            </div>
+            ${tagHtml}
+            <span class="fn-row-arrow">→</span>
+          </${tag}>`;
+        });
+
+        html += `</div>`;
+      });
+
+      section.innerHTML = html;
+    }
+
+    function escHtml(str) {
+      return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+    }
+
+    function handleSubscribe(e) {
+      e.preventDefault();
+      const btn = e.target.querySelector('button');
+      btn.textContent = 'Subscribed';
+      btn.disabled = true;
+      e.target.querySelector('input').disabled = true;
+    }
+
+    loadArchive();
+  </script>
+</body>
+</html>
