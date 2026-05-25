@@ -282,6 +282,15 @@ footer {
   white-space: nowrap;
 }
 
+.footer-version {
+  font-size: 10px;
+  color: var(--limestone);
+  opacity: 0.4;
+  font-family: monospace;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
 /* ═══════════════════════════════════════════════════════
    HOME — INDEX.HTML
    ═══════════════════════════════════════════════════════ */
