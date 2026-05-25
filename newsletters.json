@@ -1,5 +1,181 @@
 [
   {
+    "id": "027",
+    "date": "2026-05-04",
+    "title": "8.000 ontslagen bij recordwinst: wat Meta ons over structuur leert",
+    "excerpt": "Meta begint op 20 mei met een ontslagronde van 8.000 medewerkers — zo'n 10% van het personeelsbestand — en schrapt daarnaast 6.000 openstaande vacatures. De ingreep volgt op een recordjaar: $201 miljard omzet, 22% groei, $43,6 miljard vrije kasstroom (Axios, TechRepublic, The Next Web — april–mei 2026).",
+    "url": "field-notes/027-meta-8000-ontslagen-bij-recordwinst.html",
+    "category": "Know"
+  },
+  {
+    "id": "026",
+    "date": "2026-05-03",
+    "title": "60% bezuinigde alvast op een belofte",
+    "excerpt": "Harvard Business Review publiceerde in januari 2026 onderzoek onder 1.006 executives wereldwijd (uitgevoerd december 2025): 60% van de bedrijven heeft al headcount gereduceerd in anticipatie van wat AI zou kunnen gaan doen. Slechts 2% koppelt grote ontslagrondes aan een daadwerkelijk geïmplementeerde AI-toepassing (HBR, januari 2026).",
+    "url": "field-notes/026-60-procent-bezuinigde-op-een-belofte.html",
+    "category": "Know"
+  },
+  {
+    "id": "025",
+    "date": "2026-05-02",
+    "title": "AI ontslaat geen mensen. Het herontwerpt de piramide.",
+    "excerpt": "Cognizant kondigde op 29 april 2026 'Project Leap' aan: een herstructurering van $230–320 miljoen, waarvan circa $270 miljoen wordt gereserveerd voor ontslagvergoedingen. Naar verwachting verdwijnen 4.000 tot — volgens sommige bronnen — 15.000 banen, vooral in de mid-level laag in India. Tegelijkertijd kondigt het bedrijf aan dit jaar 20.000 nieuwe junioren aan te nemen (Business Today, 1 mei 2026; Business Standard, 30 april 2026).",
+    "url": "field-notes/025-ai-ontslaat-geen-mensen.html",
+    "category": "Know"
+  },
+  {
+    "id": "024",
+    "date": "2026-04-30",
+    "title": "Block schrapt 4.000 banen — en noemt het geen bezuiniging",
+    "excerpt": "Jack Dorsey, oprichter van Block (voorheen Square), schrapte in februari 4.000 van de ruim 10.000 banen. Geen bezuinigingsronde, aldus Dorsey — maar een permanente herstructurering. Samen met Sequoia-partner Roelof Botha publiceerde hij het essay 'From Hierarchy to Intelligence', waarin hij stelt dat AI de coördinatiefunctie van middenmanagement overneemt (Bloomberg, Fortune — april 2026).",
+    "url": "field-notes/024-block-schrapt-4000-banen.html",
+    "category": "Know"
+  },
+  {
+    "id": "023",
+    "date": "2026-04-29",
+    "title": "De CEO zegt \"AI maakt ons sneller\". De CFO zegt iets anders.",
+    "excerpt": "Vorige week kondigden Meta en Microsoft samen ruim 16.000 banen op te zeggen, twee weken nadat Snap-CEO Evan Spiegel 16% van zijn personeel ontsloeg met de motivatie 'rapid advancements in artificial intelligence' (Variety, 15 april 2026; CNBC, 24 april 2026). Tegelijk geeft 54% van de C-suite intern toe dat AI-adoptie hun organisatie 'uit elkaar trekt' — een verdubbeling ten opzichte van 2025 (Writer, 7 april 2026).",
+    "url": "field-notes/023-de-ceo-zegt-ai-maakt-ons-sneller.html",
+    "category": "Know"
+  },
+  {
+    "id": "022",
+    "date": "2026-04-28",
+    "title": "De AI-kloof zit niet in technologie — maar tussen de directie en de werkvloer",
+    "excerpt": "Harvard Business Review publiceerde een onderzoek van Wharton-onderzoekers Stefano Puntoni en Prasanna Tambe, samen met Jeremy Korst van Mindspan Labs (8 april 2026): bestuurders en managers hebben fundamenteel verschillende ervaringen met AI. Bestuurders zien strategisch voordeel en betere besluitvorming, terwijl managers tool sprawl, datakwaliteitsproblemen en integratiefrictie ervaren.",
+    "url": "field-notes/022-de-ai-kloof-zit-niet-in-technologie.html",
+    "category": "Know"
+  },
+  {
+    "id": "021",
+    "date": "2026-04-27",
+    "title": "De AI-wet wordt concreet — en de meeste organisaties zijn er niet klaar voor",
+    "excerpt": "Het kabinet heeft op 20 april de internetconsultatie geopend voor de Uitvoeringswet AI-verordening — de Nederlandse vertaling van de Europese AI Act. Tot 1 juni kunnen bedrijven, overheden en burgers reageren. Tien bestaande toezichthouders krijgen er AI-taken bij; waar geen logische toezichthouder bestaat, neemt de Autoriteit Persoonsgegevens die rol op zich.",
+    "url": "field-notes/021-de-ai-wet-wordt-concreet.html",
+    "category": "Know"
+  },
+  {
+    "id": "020",
+    "date": "2026-04-26",
+    "title": "De helft van alle bedrijven loopt vast op AI — en de oorzaak is geen technisch probleem",
+    "excerpt": "Bijna de helft van alle grote organisaties wereldwijd (49%) zit nog vast in de pilotfase van AI-implementatie, blijkt uit de Enterprise AI Adoption Impact Index van Infor (22 april 2026). De drie meest genoemde barrières — datasecurity (36%), gebrek aan intern talent (25%) en onduidelijke ROI (23%) — zijn stuk voor stuk organisatievraagstukken.",
+    "url": "field-notes/020-de-helft-loopt-vast-op-ai.html",
+    "category": "Know"
+  },
+  {
+    "id": "019",
+    "date": "2026-04-25",
+    "title": "De organisatielaag die niemand meer wil financieren",
+    "excerpt": "Meta en Microsoft maakten deze week samen meer dan 20.000 ontslagen bekend (CNBC, Axios, Al Jazeera — 23-24 april 2026). Meta schrapt 8.000 banen — 10% van het personeelsbestand — en bevriest nog eens 8.000 openstaande vacatures. In beide gevallen zijn het vooral middenmanagementlagen en niet-technische coördinatiefuncties die verdwijnen; de vrijgekomen budgetten gaan naar AI-infrastructuur.",
+    "url": "field-notes/019-de-organisatielaag-die-niemand-meer-wil-financieren.html",
+    "category": "Know"
+  },
+  {
+    "id": "018",
+    "date": "2026-04-24",
+    "title": "60% van de bedrijven wil medewerkers ontslaan die AI niet omarmen — maar vergeet het échte probleem",
+    "excerpt": "Uit een grootschalig onderzoek van Writer en Workplace Intelligence (april 2026, 1.600+ executives en medewerkers) blijkt dat 60% van de bedrijven van plan is medewerkers te ontslaan die AI niet adopteren. Tegelijkertijd geeft 54% van de C-suite toe dat AI-adoptie hun organisatie 'uit elkaar scheurt', en zegt 44% van de Gen Z-medewerkers actief de AI-strategie van hun werkgever te saboteren.",
+    "url": "field-notes/018-60-procent-bedrijven-wil-medewerkers-ontslaan.html",
+    "category": "Know"
+  },
+  {
+    "id": "017",
+    "date": "2026-04-23",
+    "title": "AI bespaart managers tijd — maar niet voor het werk dat telt",
+    "excerpt": "Fortune publiceerde op 7 april een analyse onder de noemer 'the megamanager era': het gemiddelde aantal directe rapporten per manager is sinds 2013 (Gallup-meting) bijna verdubbeld. Meta voert in zijn nieuwe Applied AI-engineering divisie inmiddels een ratio van 50 op 1 — ongeveer twee keer wat tot voor kort als bovengrens werd beschouwd.",
+    "url": "field-notes/017-ai-bespaart-managers-tijd-maar-niet-voor-het-werk-dat-telt.html",
+    "category": "Know"
+  },
+  {
+    "id": "016",
+    "date": "2026-04-21",
+    "title": "AI raakt niet de onderkant, maar de middenlaag",
+    "excerpt": "In het eerste kwartaal van 2026 zijn in de wereldwijde techsector tussen de 78.000 en 90.000 banen geschrapt, waarvan bijna de helft direct wordt toegeschreven aan AI-gedreven automatisering (Tom's Hardware, april 2026). Analyses van onder meer NewsPress en Alloy Partners (april 2026) wijzen op een consistent patroon: niet de instroom, maar de middenlaag — teamleads, projectmanagers, directors — is het primaire doelwit. Microsoft zou intern sturen op een engineer-to-manager-ratio van 10:1.",
+    "url": "field-notes/016-ai-raakt-niet-de-onderkant-maar-de-middenlaag.html",
+    "category": "Know"
+  },
+  {
+    "id": "015",
+    "date": "2026-04-20",
+    "title": "AI schrapt middenmanagement. Wie krijgt het werk?",
+    "excerpt": "Fortune publiceerde op 7 april 2026 een analyse over wat het tijdschrift het 'megamanager-tijdperk' noemt: de gemiddelde Amerikaanse manager heeft nu 12 direct reports — bijna een verdubbeling sinds Gallup deze cijfers in 2013 begon bij te houden. Meta's nieuwe AI-engineering-divisie draait op een ratio van 50-op-1. Gartner voorspelt dat eind 2026 20% van de organisaties AI inzet om een managementlaag te verwijderen.",
+    "url": "field-notes/015-ai-schrapt-middenmanagement-wie-krijgt-het-werk.html",
+    "category": "Know"
+  },
+  {
+    "id": "014",
+    "date": "2026-04-19",
+    "title": "Wat middle management eigenlijk oploste",
+    "excerpt": "Op 17 april 2026 publiceerde Fortune een analyse van de denkwijze achter de beslissing van Block-CEO Jack Dorsey om eerder dit jaar circa 4.000 medewerkers te laten gaan — ongeveer 40% van het personeel. Dorsey en Sequoia-partner Roelof Botha stellen dat klassieke managementhiërarchie primair één probleem oplost: informatie routeren door organisaties die te groot zijn voor één persoon om te overzien.",
+    "url": "field-notes/014-wat-middle-management-eigenlijk-oploste.html",
+    "category": "Know"
+  },
+  {
+    "id": "013",
+    "date": "2026-04-18",
+    "title": "Je kunt niet automatiseren wat je niet begrijpt",
+    "excerpt": "Uit onderzoek van Deloitte en Techzine onder Nederlandse organisaties (2026) blijkt dat 53% de eigen werkprocessen omschrijft als 'slechts enigszins gedocumenteerd', terwijl 58% aangeeft dat ongedocumenteerde of ad-hoc processen de efficiëntie regelmatig beïnvloeden.",
+    "url": "field-notes/013-je-kunt-niet-automatiseren-wat-je-niet-begrijpt.html",
+    "category": "Know"
+  },
+  {
+    "id": "012",
+    "date": "2026-04-17",
+    "title": "AI-compliance is geen toekomstplanning meer",
+    "excerpt": "De verplichting tot AI-geletterdheid geldt voor iedere organisatie die AI gebruikt, en dat al since 2 februari 2025. Overtredingen kunnen worden gesanctioneerd vanaf 2 augustus 2025.",
+    "url": "field-notes/012-ai-compliance-is-geen-toekomstplanning-meer.html",
+    "category": "Know"
+  },
+  {
+    "id": "011",
+    "date": "2026-04-16",
+    "title": "De helft gebruikt AI. Niemand merkt het.",
+    "excerpt": "Gallup publiceerde nieuwe data: voor het eerst zegt de helft van alle Amerikaanse werknemers AI te gebruiken in hun werk. Tegelijk geeft slechts 12% aan dat AI de manier van werken in hun organisatie écht heeft veranderd.",
+    "url": "field-notes/011-de-helft-gebruikt-ai-niemand-merkt-het.html",
+    "category": "Know"
+  },
+  {
+    "id": "010",
+    "date": "2026-04-15",
+    "title": "Agile is dood. AI heeft het gedaan.",
+    "excerpt": "Op 14 april 2026 publiceerde softwareontwikkelaar Lewis Campbell een stuk getiteld 'Saying Goodbye to Agile' dat binnen een dag meer dan honderd reacties opriep op Hacker News. Zijn argument: AI-tools dwingen teams opnieuw te specificeren — ze werken slecht met vaagheid.",
+    "url": "field-notes/010-agile-is-dood-ai-heeft-het-gedaan.html",
+    "category": "Know"
+  },
+  {
+    "id": "009",
+    "date": "2026-04-14",
+    "title": "88% verhoogt het AI-budget. 11% gebruikt het echt.",
+    "excerpt": "88% van de senior executives heeft het AI-budget voor 2026 verhoogd — specifiek om te bewegen van automatisering naar autonomie. Tegelijkertijd gebruikt slechts 11% van de onderzochte organisaties agentic AI-systemen daadwerkelijk in productie.",
+    "url": "field-notes/009-88-procent-verhoogt-ai-budget-11-procent-gebruikt-het-echt.html",
+    "category": "Know"
+  },
+  {
+    "id": "008",
+    "date": "2026-04-12",
+    "title": "Je medewerkers werken harder. Dankzij AI.",
+    "excerpt": "Onderzoek van UC Berkeley Haas School of Business laat zien dat AI medewerkers sneller laat werken en meer taken laat oppakken — zonder dat hen dat gevraagd werd. AI heeft niet de werkdruk verlaagd, het heeft de absorptiecapaciteit vergroot.",
+    "url": "field-notes/008-je-medewerkers-werken-harder-dankzij-ai.html",
+    "category": "Know"
+  },
+  {
+    "id": "007",
+    "date": "2026-04-11",
+    "title": "AI is klaar met adviseren",
+    "excerpt": "Op 9 april presenteerde Zoom een AI Companion die niet meer assisterend maar uitvoerend werkt: na een vergadering start de AI zelfstandig met het oppakken en afhandelen van actiepunten. Zoom positioneert 2026 als het jaar van de voltooiing — niet langer helpen, maar doen.",
+    "url": "field-notes/007-ai-is-klaar-met-adviseren.html",
+    "category": "Know"
+  },
+  {
+    "id": "006",
+    "date": "2026-04-10",
+    "title": "Driekwart wil AI-agents. Eén op de tien gebruikt ze echt.",
+    "excerpt": "Uit Deloitte's State of AI in the Enterprise 2026 blijkt dat circa 75% van de bedrijven van plan is AI-agents binnen twee jaar in te zetten. Tegelijk heeft slechts 14% daadwerkelijk inzetbare oplossingen, en gebruikt maar 11% deze systemen actief in productie.",
+    "url": "field-notes/006-driekwart-wil-ai-agents.html",
+    "category": "Know"
+  },
+  {
     "id": "005",
     "date": "2026-04-09",
     "title": "AI pakt het middenkader als eerste",
